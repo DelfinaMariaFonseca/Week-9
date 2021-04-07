@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register now!</h1>
+    <form action="">
+        <div class="elements">
+            <div class="elem">
+                <label for="fname">
+                    Full name
+                </label>
+                <input id="fname" type="text" required>
+            </div>
+            <div class="elem">
+                <label for="email">
+                    Email
+                </label>
+                <input id="email" type="text" required>
+            </div>
+        </div>
+        <div class="elements">
+            <div class="elem">
+                <label for="passw">
+                    Password
+                </label>
+                <input id="passw" type="password" required>
+            </div>
+            <div class="elem">
+                <label for="rpassw">
+                    Repeat password
+                </label>
+                <input id="rpassw" type="password" required>
+            </div>
+        </div>
+        <div id="buttons">
+            <input class="button" type="submit" value="Submit">
+            <input class="button" type="button" value="Reset">
+        </div>
+    </form>
+    <div id="link">
+        <span>
+            Are you already registered?
+            <a href="https://marianasdiaz.github.io/Task9/login">
+                Click here to login!
+            </a>
+        </span>
+    </div>
+    <div id="reg-alert" class="hidden validationContent">
+
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>

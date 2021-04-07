@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: grey;
+    color: rgb(181, 241, 189);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color:rgb(78, 78, 78);
+}
+form {
+    width: auto;
+    margin: 20px 40px;
+}
+.elements {
+    margin: 40px 10px 40px;
+    display: flex;
+    justify-content: center;
+}
+.elem {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.input{ 
+    margin-left: 5px;
+}
+input{
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 4px;
+    background-color: rgb(78, 78, 78);
+}
+#buttons{
+   display: flex;
+    justify-content: center;
+} 
+.button{
+    margin-right: 60px;
+    color: rgb(0, 174, 255);
+}
+.button:hover{
+    color: grey;
+    border: 2px solid rgb(234, 196, 241);
+}
+#link{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#link a{
+    color: rgb(0, 174, 255);
+}
+#link a:hover{
+    color: rgb(181, 241, 189);
+}
+.hidden{
+    display: flex;
+    overflow: hidden;
+    color: rgb(0, 174, 255);
+    justify-content: center;
+}
