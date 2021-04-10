@@ -12,16 +12,20 @@ h1 {
     color:rgb(78, 78, 78);
 }
 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: auto;
     margin: 40px 40px;
 }
 .elements {
     margin: 40px 10px 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .elem {
-    margin-right: 60px;
+    margin-right: 40px;
     display: flex;
 }
 .input{ 
@@ -36,7 +40,7 @@ input{
     justify-content: center;
 } 
 .button{
-    margin-right: 20px;
+    margin-right: 40px;
     color: rgb(0, 174, 255);
 }
 .button:hover{
@@ -50,13 +54,22 @@ input{
 }
 #link a{
     color: rgb(0, 174, 255);
+
 }
 #link a:hover{
     color: rgb(181, 241, 189);
+
 }
-.hidden{
+.validationContent{
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
     color: rgb(0, 174, 255);
     justify-content: center;
+}
+.error{
+    display: none;
+    color: rgb(206, 171, 125);
+
+
 }

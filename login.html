@@ -10,17 +10,19 @@
 <body>
     <h1>Log in!</h1>
     <form action="">
-        <div id="email" class="elements" >
+        <div id="iemail" class="elements" >
             <label for="email">
                 Email
             </label>
-            <input type="email" name="email" id="iemail" class="input">
+            <input type="email" name="email" id="email" class="input">
+            <span class="error">The email must contain a valid format.</span>
         </div> 
         <div id="passw" class="elements">
-            <label for="passw">
+            <label for="password">
                 Password
             </label>
-            <input type="password" name="passw" id="ipassw" class="input">
+            <input type="password" name="password" id="password" class="input">
+            <span class="error">The password must contain at least 8 characters, consisting of letters and numbers.</span>
         </div>
         <div id="buttons">
             <input type="submit" value="Log in" class="button">
@@ -37,5 +39,6 @@
 
     </div>
     <script src="./js/login.js"></script>
+    <script src="./js/inputcheck.js"></script>
 </body>
 </html>
