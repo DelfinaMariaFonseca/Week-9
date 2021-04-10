@@ -23,13 +23,12 @@ form {
 .elem {
     margin-right: 60px;
     display: flex;
-
 }
 .input{ 
     margin-left: 5px;
 }
 input{
-    border: 5px solid rgb(0, 174, 255);
+    border: 1px solid rgb(0, 174, 255);
     background-color: rgb(78, 78, 78);
 }
 #buttons{
@@ -37,7 +36,7 @@ input{
     justify-content: center;
 } 
 .button{
-    margin-right: 60px;
+    margin-right: 20px;
     color: rgb(0, 174, 255);
 }
 .button:hover{

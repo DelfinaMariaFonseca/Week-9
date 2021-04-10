@@ -1,4 +1,5 @@
 let errorArray = [];
+let hidden = document.getElementsByClassName("hidden");
 
 function formCheck() {
     let elements = ["email", "passw", "buttons"];
@@ -7,6 +8,7 @@ function formCheck() {
         if (!document.getElementById(element)) {
             errorArray.push("Element " + element + " does not exists");
             hidden.append("Element " + element + " does not exists");
+            console.log(errorArray);
         }
     }
     function checkLabelEmail() {
@@ -43,8 +45,12 @@ function formCheck() {
             errorsArray.push('Missing submit button');
         }
     };
-    formCheck();
-checkLabelEmail();
-checkInputEmail();
-checkLabelPassword();
-checkInputPassword();
+function check(){
+    const ValidationsResults = document.getElementsByClassName("validationContent");
+    if(errorArray.length === 0) {
+        ValidationsResults.innerHTML += '<p>Every validation has passed</p>';
+    } else {
+        for (let i = 0; i < errorArray.length; i++) {
+            console.log(errorArray[i]);
+            ValidationsResults.innerHTML += '<p>' + errorArray[i] + '</p>';
+        }
