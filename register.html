@@ -12,16 +12,18 @@
     <form action="">
         <div class="elements">
             <div class="elem">
-                <label for="fname">
+                <label for="fullname">
                     Full name
                 </label>
                 <input id="name" type="text" required>
+                <span class="fullname"></span>
             </div>
             <div class="elem">
                 <label for="email">
                     Email
                 </label>
                 <input id="email" type="text" required>
+                <span class="email">The email must contain a valid format.</span>
             </div>
         </div>
         <div class="elements">
@@ -30,12 +32,15 @@
                     Password
                 </label>
                 <input id="passw" type="password" required>
+                <span class= "nerror"> The password must contain at least 8 characters, consisting of letters and numbers.</span>
             </div>
             <div class="elem">
                 <label for="rpassw">
                     Repeat password
                 </label>
                 <input id="rpassw" type="password" required>
+                <span class= "nerror"> The password must contain at least 8 characters, consisting of letters and numbers.</span>
+
             </div>
         </div>
         <div id="buttons">
@@ -54,5 +59,6 @@
 
     </div>
     <script src="./js/register.js"></script>
+    <script src="./js/validateregister.js"></script>
 </body>
 </html>
